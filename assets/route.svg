@@ -1,0 +1,29 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ruta -->
+  <polyline points="100,500 200,400 300,450 400,350 500,300 600,350 700,250"
+            stroke="#ff3c00" stroke-width="4" fill="none" filter="url(#glow)" />
+
+  <!-- Waypoints -->
+  <circle cx="100" cy="500" r="6" fill="#ff3c00" filter="url(#glow)" />
+  <circle cx="200" cy="400" r="6" fill="#ff3c00" filter="url(#glow)" />
+  <circle cx="300" cy="450" r="6" fill="#ff3c00" filter="url(#glow)" />
+  <circle cx="400" cy="350" r="6" fill="#ff3c00" filter="url(#glow)" />
+  <circle cx="500" cy="300" r="6" fill="#ff3c00" filter="url(#glow)" />
+  <circle cx="600" cy="350" r="6" fill="#ff3c00" filter="url(#glow)" />
+  <circle cx="700" cy="250" r="6" fill="#ff3c00" filter="url(#glow)" />
+
+  <!-- Texto opcional -->
+  <text x="20" y="40" fill="#ff3c00" font-size="20" font-family="Orbitron" filter="url(#glow)">
+    Ruta 9K – Anderson Capristan
+  </text>
+</svg>
